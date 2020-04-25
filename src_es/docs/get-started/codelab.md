@@ -44,7 +44,7 @@ El GIF animado muestra como trabaja la app al completar la parte 1.
 {{site.alert.secondary}}
   <h4 class="no_toc">Lo que aprenderemos en la parte 1</h4>
 
-  * Como escribir una apliación Flutter que se vea natural en iOS y Android
+  * Como escribir una aplicación Flutter que se vea natural en iOS y Android.
   * Estructura básica de una app en Flutter.
   * Encontrar y utilizar paquetes para extender funcionalidades.
   * Usar hot reload para un ciclo de desarrollo más rápido.
@@ -163,7 +163,7 @@ donde se encuentra el código Dart.
   que describa cómo mostrar el widget en términos de otros widgets 
   de nivel inferior.
 * El body en este ejemplo consiste en un widget `Center` conteniendo un 
-  widget `Text` hijo. El widget Center alinea su sub-árbol de wigets 
+  widget `Text` hijo. El widget Center alinea su sub-árbol de widgets 
   en el centro de la pantalla.
 
 # Paso 2: Usar un paquete externo
@@ -256,13 +256,13 @@ open source, en [pub.dartlang.org]({{site.pub}}/flutter/).
       "UpperCamelCase".
     {{site.alert.end}}
 
- 5. Si la app esta ejecutándose, haz [hot reload](/docs/get-started/test-drive)
+ 5. Si la app está ejecutándose, haz [hot reload](/docs/get-started/test-drive)
     para actualizar la app. Cada vez que se presione hot reload
     o se guarde el proyecto, deberá verse una palabra diferente,
     elegida aleatoriamente, en la app.
     Esto es debido a que las palabras generadas dentro del método "build",
     el cual se ejecuta cada vez que la MaterialApp requiere renderizar
-    o al alternar la plataforma en el inspector de Flutter .
+    o al alternar la plataforma en el inspector de Flutter.
 
     {% indent %}
            {% include android-ios-figure-pair.md image="step2.png" alt="App at completion of second step" %}
@@ -271,7 +271,7 @@ open source, en [pub.dartlang.org]({{site.pub}}/flutter/).
 ## ¿Problemas?
 {:.no_toc}
 
-Si tu app no esta ejecutando correctamente, busca por errores al teclear. De ser necesario,
+Si tu app no se está ejecutando correctamente, busca por errores al teclear. De ser necesario,
 usa el código en el siguiente enlace y continuar.
 
 * [pubspec.yaml]({{code-url}}/startup_namer/step2_use_package/pubspec.yaml)
@@ -283,7 +283,7 @@ usa el código en el siguiente enlace y continuar.
 <?code-excerpt path-base="codelabs/startup_namer/step3_stateful_widget"?>
 
 Los widgets State<em>less</em> son inmutables, esto quiere decir que
-sus propiedades no puedes cambiar&mdash;todos sus valores son finales.
+sus propiedades no se pueden cambiar&mdash;todos sus valores son finales.
 
 Con widgets State<em>ful</em> mantienes un estado que puede cambiar
 durante el tiempo de vida del widget. Implementar un stateful
@@ -292,9 +292,9 @@ la cual crea la instancia 2) una clase State. La clase StatefulWidget es,
 a si misma, inmutable, pero la clase State persiste sobre el tiempo de
 vida de el widget.
 
-En este paso, agregaras un stateful widget, `RandomWords`, el cual crea su clase
+En este paso, agregarás un stateful widget, `RandomWords`, el cual crea su clase
 `State`, `RandomWordsState`. Entonces usarás `RandomWords` como 
-un hijo dentro del existentea stateless widget `MyApp`.
+un hijo dentro del existente stateless widget `MyApp`.
 
  1. Crea una state class mínima. Añade lo siguiente al final 
  de `main.dart`:
@@ -314,7 +314,7 @@ un hijo dentro del existentea stateless widget `MyApp`.
     Esta clase guarda el par de palabras generados, que crecen infinitamente cuando el 
     usuario hace scrolls, y los pares de palabras favoritos (en la
     [parte 2]({{site.codelabs}}/codelabs/first-flutter-app-pt2)),
-    que el usuario añado o elimina de la lista alternando con el icon del corazón.
+    que el usuario añade o elimina de la lista alternando con el icon del corazón.
 
     `RandomWordsState` depende de la clase `RandomWords`. La añadirás a continuación.
 
@@ -329,7 +329,7 @@ un hijo dentro del existentea stateless widget `MyApp`.
       }
     ```
 
-    Después de agregar esta clase de estado, el IDE se quejara que
+    Después de agregar esta clase de estado, el IDE mostrará que
     a la clase le hace falta el método build. Siguiente, agregar un método
     build básico que genera el juego de palabras moviendo la
     generación de código de `MyApp` a `RandomWordsState`.
@@ -439,7 +439,7 @@ retrasada, a petición.
     dos parámetros se pasan a la función&mdash;el `BuildContext`, 
     y un fila de iteración , `i`. El iterador empieza desde 0 e incrementa
     cada vez que la función es llamada. Este incrementa dos veces por cada pareja de palabras sugeridas: 
-    una para el ListTile, y una para el Divider. Este modelo permie a la lista de sugerencias crecer infinitamente cuando el usuario hace scroll.
+    una para el ListTile, y una para el Divider. Este modelo permite a la lista de sugerencias crecer infinitamente cuando el usuario hace scroll.
 
  2. Añade una función `_buildSuggestions()`, mostrada 
     abajo, a la clase `RandomWordsState` (borra los comentarios, si lo prefieres).
@@ -467,7 +467,7 @@ retrasada, a petición.
         palabras. Para las filas impares, la
         función añade un widget `Divider` para separar visualmente 
         las entradas. Nota
-        que este divisor puede ver ser dificil de ver en los
+        que este divisor puede ver ser difícil de ver en los
         dispositivos más pequeños.
      2. Añade un widget divisor de un pixel de altura antes de
       cada fila en el `ListView`.
@@ -517,7 +517,7 @@ retrasada, a petición.
       }
     ```
 
- 5. Actualiza el método `build` de `MyApp`, cambiando el title,
+ 5. Actualiza el método `build` de `MyApp`, cambiando el `title`,
     y cambiando home para ser el widget `RandomWords`.
 
     Reemplaza el método original con el método `build` remarcado abajo:
@@ -547,7 +547,7 @@ retrasada, a petición.
        }
     ```
 
- 6. Reinicia la app. Deberías ver una lista de palabras emparejadas no importa lo lejos
+ 6. Reinicia la app. Deberías ver una lista de palabras emparejadas, no importa lo lejos
     que hagas scroll.
 
     {% indent %}
@@ -557,7 +557,7 @@ retrasada, a petición.
 ## ¿Problemas?
 {:.no_toc}
 
-Si tu app no esta funcionando correctamente, puedes ver el código
+Si tu app no está funcionando correctamente, puedes ver el código
 en el siguiente enlace y continuar.
 
 * [lib/main.dart]({{code-url}}/startup_namer/step4_infinite_list/lib/main.dart)
@@ -572,11 +572,11 @@ en el siguiente enlace y continuar.
 Enhorabuena!
 
 Has escrito una app interactiva en Flutter que se ejecuta en ambos iOS y Android
-En este laboratorio, tu has:
+En este laboratorio, tú has:
 
 * Creado una app de Flutter desde cero.
 * Escrito código Dart.
-* Utilizado una libreía externa de terceros.
+* Utilizado una librería externa de terceros.
 * Usado hot reload para un ciclo de desarrollo más rápido.
 * Impementado un widget stateful.
 * Creado una lista de scroll infinito, de carga retrasada.
@@ -585,7 +585,7 @@ Si deseas extender esta app, procede con la
 [parte 2]({{site.codelabs}}/codelabs/first-flutter-app-pt2)
 en el sitio 
 [Google Developers Codelabs]({{site.codelabs}}/),
-donde añadiras la siguiente funcionalidad:
+donde añadirás la siguiente funcionalidad:
  * Implementar interactividad añadiendo un icono corazón pulsable para guardar 
  tus parejas de palabras favoritas.
 * Implementar navegación a una nueva ruta añadiendo una nueva pantalla 

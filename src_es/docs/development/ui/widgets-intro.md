@@ -183,7 +183,7 @@ flutter:
 ```
 
 Muchos widgets Material Desgin necesitan estar dentro de un
-[MaterialApp]({{api}}/material/MaterialApp-class.html) parar mostrarse correctamente, con 
+[MaterialApp]({{api}}/material/MaterialApp-class.html) para mostrarse correctamente, con 
 el fin de heredar los datos del Theme. Por lo tanto, ejecutamos la aplicación con un
 [MaterialApp]({{api}}/material/MaterialApp-class.html).
 
@@ -211,7 +211,7 @@ utiliza un [Expanded]({{api}}/widgets/Expanded-class.html)
 para rellenar el espacio restante con su cuerpo, 
 que consiste en un mensaje centrado.
 
-Para más información, mira [Layouts](/docs/development/ui/widgets/layout)
+Para más información, mira [Layouts](/docs/development/ui/widgets/layout).
 
 ## Utilizando Material Components
 
@@ -349,7 +349,7 @@ callbacks opcionales para otros widgets. Por ejemplo, los widgets
 tienen [onPressed()]({{api}}/material/RaisedButton-class.html#onPressed)
 callbacks que se activan cuando el usuario toca el widget.
 
-Para más información, mira: [Gestos en Flutter](/docs/development/ui/advanced/gestures)
+Para más información, mira: [Gestos en Flutter](/docs/development/ui/advanced/gestures).
 
 ## Cambiar los widgets en respuesta a las entradas
 
@@ -421,7 +421,7 @@ estado actual. Por otro lado, los objetos de estado son persistentes entre llama
 permitiéndoles recordar información.
 
 El ejemplo anterior acepta la entrada del usuario y utiliza directamente el resultado
-en su método build.  En aplicaciones más complejas, diferentes partes de la jerarquía
+en su método build. En aplicaciones más complejas, diferentes partes de la jerarquía
 de widgets podrían ser responsables de diferentes aspectos; por ejemplo, un
 widget puede presentar una interfaz de usuario compleja con el objetivo de recopilar
 información específica, como una fecha o lugar, mientras que otro widget podría
@@ -522,7 +522,7 @@ class ShoppingListItem extends StatelessWidget {
 
   Color _getColor(BuildContext context) {
     // El tema depende del BuildContext porque diferentes partes del árbol
-    // pueden tener diferentes temas.  El BuildContext indica dónde se está llevando a cabo la
+    // pueden tener diferentes temas. El BuildContext indica dónde se está llevando a cabo la
     // llamada al método build y por lo tanto qué tema usar.
 
     return inCart ? Colors.black54 : Theme.of(context).primaryColor;
@@ -566,8 +566,7 @@ directamente. En lugar de eso, el widget llama a la función `onCartChanged`
 recibido de su widget padre. Este patrón le permite almacenar el estado más arriba
 en la jerarquía de widgets, lo que hace que el estado persista por períodos más largos de
 tiempo. En el caso extremo, el estado almacenado en el widget pasado a
-[runApp()][] persiste
-durante toda la vida útil de la aplicación.
+[runApp()][] persiste durante toda la vida útil de la aplicación.
 
 Cuando el padre recibe el callback `onCartChanged`, el padre actualiza
 su estado interno, lo cual desencadena la re-llamada al método build y crea una nueva

@@ -65,7 +65,7 @@ fila.
 
 El resto del UI en este ejemplo es controlado por propiedades.
 Fija un color para [Icon][] usando su propiedad `color`.
-Us la propiedad `Text.style` para fijar la fuente, su color, tamaño, y así sucesivamente.
+Usa la propiedad `Text.style` para fijar la fuente, su color, tamaño, y así sucesivamente.
 Columns y rows tienen propiedades que te permiten especificar como se alinearán 
 sus hijos vertical u horizontalmente, y cuanto espacio deben ocupar 
 los hijos.
@@ -743,7 +743,7 @@ claro.
 </div>
 </div>
 
-Un `Container` tambien es usado para añadir brodes redondeados y márgenes a cada imagen:
+Un `Container` también es usado para añadir bordes redondeados y márgenes a cada imagen:
 
 <?code-excerpt "layout/container/lib/main.dart (row)" replace="/\bContainer/[!$&!]/g;"?>
 ```dart
@@ -958,7 +958,7 @@ Los widgets pueden superponerse completa o parcialmente al widget base.
   {:.text-center}
 
   Usa `Stack` para superponer un gradiente encima de la imagen. El gradiente 
-  asegura que los iconos del toolbar son distintos de la imasgen.
+  asegura que los iconos del toolbar son distintos de la imagen.
 
   **Dart code:** [contacts_demo.dart]({{demo}}/contacts_demo.dart)
   de la [Flutter Gallery][]

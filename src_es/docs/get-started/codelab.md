@@ -44,6 +44,7 @@ El GIF animado muestra como trabaja la app al completar la parte 1.
 {{site.alert.secondary}}
   <h4 class="no_toc">Lo que aprenderemos en la parte 1</h4>
 
+
   * Como escribir una aplicación Flutter que se vea natural en iOS y Android.
   * Estructura básica de una app en Flutter.
   * Encontrar y utilizar paquetes para extender funcionalidades.
@@ -53,7 +54,7 @@ El GIF animado muestra como trabaja la app al completar la parte 1.
 
   En la [parte 2]({{site.codelabs}}/codelabs/first-flutter-app-pt2)
   de este codelab, añadirás interactividad, modificarás el theme de la app, y 
-  añadirás la habilidad de navegar a una nueva pantala (llamada una _ruta_ en Flutter).
+  añadirás la habilidad de navegar a una nueva pantalla (llamada una _ruta_ en Flutter).
 {{site.alert.end}}
 
 {{site.alert.secondary}}
@@ -153,7 +154,7 @@ donde se encuentra el código Dart.
 * El método main usa la anotación fat arrow (`=>`).
   Usa anotación fat arrow para funciones o métodos de una sola linea.
 * La app hereda de `StatelessWidget` el cual hace la app un widget en sí misma.
-  En Flutter, casi todo es un widget, incluido alineaciónes, 
+  En Flutter, casi todo es un widget, incluido alineaciones, 
   padding y layouts.
 * El widget `Scaffold`, de la librería de Material,
   provee una AppBar por defecto, "title", y una propiedad "body" el cual
@@ -473,9 +474,9 @@ retrasada, a petición.
       cada fila en el `ListView`.
      3. La expresión `i ~/ 2` divide `i` entre 2 y devuelve un 
      resultado entero.
-        Por ejemplo: 1, 2, 3, 4, 5 dan como resultado 0, 1, 1, 2, 2. Esto calcula el actual numero de palbras emparejadas en el `ListView`, menos los widgests 
+        Por ejemplo: 1, 2, 3, 4, 5 dan como resultado 0, 1, 1, 2, 2. Esto calcula el actual numero de palabras emparejadas en el `ListView`, menos los widgests 
         divisores.
-     4. Si has alcanzado el final de los pares de palabras dispobibles, entonces genera
+     4. Si has alcanzado el final de los pares de palabras disponibles, entonces genera
         10 más y añade estos a la lista de sugerencias.
 
     La función `_buildSuggestions()` llama a `_buildRow()` una vez por
@@ -578,7 +579,7 @@ En este laboratorio, tú has:
 * Escrito código Dart.
 * Utilizado una librería externa de terceros.
 * Usado hot reload para un ciclo de desarrollo más rápido.
-* Impementado un widget stateful.
+* Implementado un widget stateful.
 * Creado una lista de scroll infinito, de carga retrasada.
 
 Si deseas extender esta app, procede con la
